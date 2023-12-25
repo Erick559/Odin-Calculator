@@ -9,17 +9,17 @@ function add() {
 }
 
 function subtract() {
-
+    return firstNumber - secondNumber;
 }
 
 function multiply() {
-
+    return firstNumber * secondNumber;
 }
 
 function divide() {
-
+    return firstNumber / secondNumber;
 }
 
-function operator(operator, firstNumber, secondNUmber) {
+function operator(operator, firstNumber, secondNumber) {
 
 }
