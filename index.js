@@ -1,6 +1,6 @@
-let firstNumber;
-let secondNumber;
-let operator;
+let firstNumber = ''
+let secondNumber = ''
+let operator = ''
 
 
 
