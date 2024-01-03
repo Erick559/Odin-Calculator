@@ -2,7 +2,15 @@ let firstNumber = ''
 let secondNumber = ''
 let operator = ''
 
+function getNumber(value) {
+    if (!operator) {
+        firstNumber += value
+    } else {
+        secondNumber += value
+    }
 
+    return secondNumber
+}
 
 function add() {
     return firstNumber + secondNumber;
@@ -18,8 +26,4 @@ function multiply() {
 
 function divide() {
     return firstNumber / secondNumber;
-}
-
-function operator(operator, firstNumber, secondNumber) {
-
 }
