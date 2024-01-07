@@ -16,4 +16,12 @@ let operator = ''
         valueInput.value += value;
     }
 
-   
+      // Function to clear the input field
+      function clearInput() {
+        valueInput.value = '';
+        firstNumber = '';
+        secondNumber = '';
+        operator = '';
+    }
+
+    
