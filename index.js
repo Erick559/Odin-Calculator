@@ -10,4 +10,10 @@ let operator = ''
     
     })) 
 
+
+    // Function to handle numeric button clicks
+    function appendToInput(value) {
+        valueInput.value += value;
+    }
+
    
