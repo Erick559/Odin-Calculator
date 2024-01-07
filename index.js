@@ -44,5 +44,21 @@ let operator = ''
         }
     }
      
+    // Function to handle operator button clicks
+    function handleOperator(selectedOperator) {
+        // Extract numbers and operator from the current input value
+        const expression = valueInput.value;
+        const lastChar = expression.slice(-1);
+
+        // Check if the last character is an operator
+        if ('+-*/'.includes(lastChar)) {
+            // Replace the last operator with the new one
+            valueInput.value = expression.slice(0, -1) + selectedOperator;
+        } else {
+            // Append the operator to the display
+            valueInput.value += selectedOperator;
+        }
+    }
     
-   
+    
+    
