@@ -1,36 +1,13 @@
-const value = document.querySelectorAll('.value')
+const valueInput = document.querySelector('.value')
 const spans = document.querySelectorAll('.calculator_face span')
-
-console.log(spans)
 
 let firstNumber = ''
 let secondNumber = ''
 let operator = ''
 
+    spans.forEach(span => span.addEventListener('click', () => {
+        handleButtonClick(span.textContent)
+    
+    })) 
 
-
-function getNumber(value) {
-    if (!operator) {
-        firstNumber += value
-    } else {
-        secondNumber += value
-    }
-
-    return secondNumber
-}
-
-function add() {
-    return firstNumber + secondNumber;
-}
-
-function subtract() {
-    return firstNumber - secondNumber;
-}
-
-function multiply() {
-    return firstNumber * secondNumber;
-}
-
-function divide() {
-    return firstNumber / secondNumber;
-}
+   
