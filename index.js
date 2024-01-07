@@ -1,3 +1,7 @@
+let value = document.querySelectorAll('.value')
+
+console.log(value)
+
 let firstNumber = ''
 let secondNumber = ''
 let operator = ''
