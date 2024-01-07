@@ -1,10 +1,10 @@
-let value = document.querySelectorAll('.value')
-
-console.log(value)
+const value = document.querySelectorAll('.value')
 
 let firstNumber = ''
 let secondNumber = ''
 let operator = ''
+
+
 
 function getNumber(value) {
     if (!operator) {
