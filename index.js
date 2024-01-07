@@ -61,4 +61,36 @@ let operator = ''
     }
     
     
+    // Function to calculate and display the result
+    function calculateResult() {
+        const expression = valueInput.value;
     
+        // Use regular expression to extract numbers and operator
+        const match = expression.match(/^(-?\d+(\.\d+)?)\s*([-+*/])\s*(-?\d+(\.\d+)?)$/);
+    
+        if (match) {
+            const firstNumber = parseFloat(match[1]);
+            const operator = match[3];
+            const secondNumber = parseFloat(match[4]);
+    
+            // Perform the calculation based on the operator
+            let result;
+            switch (operator) {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+            }
+    
+            // Display the result and reset the calculator state
+            valueInput.value = result;
+        }
+    }
