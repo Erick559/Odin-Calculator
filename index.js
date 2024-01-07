@@ -24,4 +24,25 @@ let operator = ''
         operator = '';
     }
 
+    function handleButtonClick(buttonText) {
+        switch (buttonText) {
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                handleOperator(buttonText);
+                break;
+            case '=':
+                calculateResult();
+                break;
+            case 'c':
+                clearInput();
+                break;
+            default:
+                appendToInput(buttonText);
+                break;
+        }
+    }
+     
     
+   
