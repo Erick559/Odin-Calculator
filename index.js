@@ -1,4 +1,7 @@
 const value = document.querySelectorAll('.value')
+const spans = document.querySelectorAll('.calculator_face span')
+
+console.log(spans)
 
 let firstNumber = ''
 let secondNumber = ''
