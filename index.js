@@ -77,7 +77,7 @@ let operator = ''
             let result;
             switch (operator) {
                 case '+':
-                    result = firstNumber + secondNumber;
+                    result = add(firstNumber, secondNumber)
                     break;
                 case '-':
                     result = firstNumber - secondNumber;
@@ -89,8 +89,29 @@ let operator = ''
                     result = firstNumber / secondNumber;
                     break;
             }
-    
+            
             // Display the result and reset the calculator state
-            valueInput.value = result;
+            if (result % 1 !==0){
+                valueInput.value = result.toFixed(2);
+            }
+            else{
+                valueInput.value = result
+            }
         }
+    }
+
+    function add(a,b){
+        return a+b;
+    }
+
+    function subtract(a,b){
+        return (a-b).toFixed(2)
+    }
+
+    function multiply(a,b){
+        return (a*b).toFixed(2)
+    }
+
+    function divide(a,b){
+        return (a/b).toFixed(2)
     }
