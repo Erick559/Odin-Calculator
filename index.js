@@ -80,22 +80,22 @@ let operator = ''
                     result = add(firstNumber, secondNumber)
                     break;
                 case '-':
-                    result = firstNumber - secondNumber;
+                    result = subtract(firstNumber,secondNumber)
                     break;
                 case '*':
-                    result = firstNumber * secondNumber;
+                    result = multiply(firstNumber,secondNumber)
                     break;
                 case '/':
-                    result = firstNumber / secondNumber;
+                    result = divide(firstNumber,secondNumber)
                     break;
             }
             
             // Display the result and reset the calculator state
-            if (result % 1 !==0){
-                valueInput.value = result.toFixed(2);
+            if (Number.isInteger(result)) {
+                valueInput.value = result;
             }
             else{
-                valueInput.value = result
+                valueInput.value = result.toFixed(2).replace(/\.?0+$/, '');
             }
         }
     }
@@ -105,13 +105,13 @@ let operator = ''
     }
 
     function subtract(a,b){
-        return (a-b).toFixed(2)
+        return a-b
     }
 
     function multiply(a,b){
-        return (a*b).toFixed(2)
+        return a*b
     }
 
     function divide(a,b){
-        return (a/b).toFixed(2)
+        return a/b
     }
