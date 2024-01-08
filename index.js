@@ -5,6 +5,8 @@ let firstNumber = ''
 let secondNumber = ''
 let operator = ''
 
+let resultDisplayed = false;
+
     spans.forEach(span => span.addEventListener('click', () => {
         handleButtonClick(span.textContent)
     
