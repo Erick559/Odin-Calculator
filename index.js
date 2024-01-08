@@ -15,6 +15,11 @@ let resultDisplayed = false;
 
     // Function to handle numeric button clicks
     function appendToInput(value) {
+
+        if(resultDisplayed){
+            clearInput();
+            resultDisplayed = false
+        }
         valueInput.value += value;
     }
 
