@@ -100,6 +100,8 @@ let resultDisplayed = false;
                 valueInput.value = result.toFixed(2).replace(/\.?0+$/, '');
             }
         }
+
+        resultDisplayed = true;
     }
 
     function add(a,b){
