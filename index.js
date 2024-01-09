@@ -35,7 +35,7 @@ let resultDisplayed = false;
         switch (buttonText) {
             case '+':
             case '-':
-            case 'X':
+            case 'x':
             case '/':
                 handleOperator(buttonText);
                 break;
@@ -58,7 +58,7 @@ let resultDisplayed = false;
         const lastChar = expression.slice(-1);
 
         // Check if the last character is an operator
-        if ('+-*/'.includes(lastChar)) {
+        if ('+-x/'.includes(lastChar)) {
             // Replace the last operator with the new one
             valueInput.value = expression.slice(0, -1) + selectedOperator;
         } else {
@@ -89,7 +89,7 @@ let resultDisplayed = false;
                 case '-':
                     result = subtract(firstNumber,secondNumber)
                     break;
-                case 'X':
+                case 'x':
                     result = multiply(firstNumber,secondNumber)
                     break;
                 case '/':
