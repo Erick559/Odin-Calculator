@@ -35,7 +35,7 @@ let resultDisplayed = false;
         switch (buttonText) {
             case '+':
             case '-':
-            case '*':
+            case 'X':
             case '/':
                 handleOperator(buttonText);
                 break;
@@ -89,7 +89,7 @@ let resultDisplayed = false;
                 case '-':
                     result = subtract(firstNumber,secondNumber)
                     break;
-                case '*':
+                case 'X':
                     result = multiply(firstNumber,secondNumber)
                     break;
                 case '/':
