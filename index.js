@@ -73,7 +73,7 @@ let resultDisplayed = false;
         const expression = valueInput.value;
     
         // Use regular expression to extract numbers and operator
-        const match = expression.match(/^(-?\d+(\.\d+)?)\s*([-+*/])\s*(-?\d+(\.\d+)?)$/);
+        const match = expression.match(/^(-?\d+(\.\d+)?)\s*([-+x/])\s*(-?\d+(\.\d+)?)$/);
     
         if (match) {
             const firstNumber = parseFloat(match[1]);
