@@ -25,3 +25,9 @@ body {
 .calculator_face {
     display: grid;
 }
+
+.calculator_face .value {
+    border: none;
+    background: #f28c28;
+    color: white;
+}
