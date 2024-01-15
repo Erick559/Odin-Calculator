@@ -55,6 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 3px -3px 15px rgba(99, 87, 87, 0.3);
 }
 
 .buttons i {
