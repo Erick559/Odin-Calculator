@@ -17,8 +17,7 @@ body {
 .calculator_container {
     position: relative;
     background: #f28c28;
-    height: 60rem;
-    width: 40rem;
+    max-width: 30rem;
     padding: 5rem;
     border-radius: 40px 40px 0 40px;
 }
@@ -26,6 +25,17 @@ body {
 .calculator_face {
     position: relative;
     display: grid;
+}
+
+.value {
+    border: none;
+    outline: none;
+    background: #f28c28;
+    height: 8rem;
+    width: 100%;
+    font-size: 3.5rem;
+    color: aliceblue;
+    text-align: right;
 }
 
 .buttons {
