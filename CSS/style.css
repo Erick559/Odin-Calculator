@@ -28,14 +28,9 @@ body {
     display: grid;
 }
 
-.calculator_face .value {
-    position: relative;
-    grid-column: span 4;
-    border: none;
-    background: #f28c28;
-    color: black;
-    height: 100px;
-    text-align: right;
-    font-weight: 700;
-    font-size: 3rem;
+.buttons {
+    cursor: pointer;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
 }
