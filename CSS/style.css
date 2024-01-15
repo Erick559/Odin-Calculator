@@ -15,6 +15,7 @@ body {
 }
 
 .calculator_container {
+    position: relative;
     background: #f28c28;
     height: 60rem;
     width: 40rem;
@@ -23,12 +24,14 @@ body {
 }
 
 .calculator_face {
+    position: relative;
     display: grid;
 }
 
 .calculator_face .value {
+    position: relative;
+    grid-column: span 4;
     border: none;
     background: #f28c28;
     color: white;
-    font-size: 4rem;
 }
