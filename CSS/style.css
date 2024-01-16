@@ -66,3 +66,8 @@ body {
 .num{
     background: white;
 }
+
+.gradient{
+    background: linear-gradient(0.1turn, grey,#f28c28);
+    overflow: hidden;
+}
