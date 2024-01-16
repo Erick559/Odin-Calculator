@@ -70,3 +70,8 @@ body {
 .gradient{
     background: linear-gradient(180deg, grey 3%,#f28c28 100%);
 }
+
+.orange{
+    color:white;
+    background:linear-gradient(#ffffff 0%, #f28c28 88%);
+}
