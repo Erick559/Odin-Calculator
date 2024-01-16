@@ -17,6 +17,7 @@ body {
 .calculator_container {
     position: relative;
     background: #f28c28;
+    max-height: 50rem;
     max-width: 30rem;
     padding: 5rem;
     border-radius: 40px 40px 0 40px;
@@ -25,6 +26,7 @@ body {
 .calculator_face {
     position: relative;
     display: grid;
+    margin-bottom: 1rem;
 }
 
 .value {
