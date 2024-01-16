@@ -68,6 +68,5 @@ body {
 }
 
 .gradient{
-    background: linear-gradient(0.1turn, grey,#f28c28);
-    overflow: hidden;
+    background: linear-gradient(180deg, grey 3%,#f28c28 100%);
 }
