@@ -13,6 +13,8 @@ spans.forEach(span => span.addEventListener('click', () => {
 
 }))
 
+del.addEventListener('click', delInput)
+
 
 // Function to handle numeric button clicks
 function appendToInput(value) {
