@@ -1,5 +1,6 @@
 const valueInput = document.querySelector('.value')
 const spans = document.querySelectorAll('.calculator_face span')
+const del = document.querySelector('#del')
 
 let firstNumber = ''
 let secondNumber = ''
@@ -29,6 +30,10 @@ function clearInput() {
     firstNumber = '';
     secondNumber = '';
     operator = '';
+}
+
+function delInput(){
+    console.log(valueInput.value.slice(-1,0))
 }
 
 function handleButtonClick(buttonText) {
