@@ -33,7 +33,11 @@ function clearInput() {
 }
 
 function delInput(){
-    console.log(valueInput.value.slice(-1,0))
+    let currentValue = valueInput.value
+
+    currentValue = valueInput.value.slice(0,-1)
+
+    valueInput.value = currentValue
 }
 
 function handleButtonClick(buttonText) {
