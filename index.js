@@ -2,7 +2,6 @@ const valueInput = document.querySelector('.value')
 const spans = document.querySelectorAll('.calculator_face span')
 const del = document.querySelector('#del')
 const clear = document.querySelector('#clear')
-const equal = document.querySelector('#equal')
 
 let firstNumber = ''
 let secondNumber = ''
