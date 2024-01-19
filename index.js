@@ -57,9 +57,6 @@ function handleButtonClick(buttonText) {
         case '=':
             calculateResult();
             break;
-        case 'C':
-            clearInput();
-            break;
         default:
             appendToInput(buttonText);
             break;
