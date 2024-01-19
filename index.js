@@ -1,6 +1,7 @@
 const valueInput = document.querySelector('.value')
 const spans = document.querySelectorAll('.calculator_face span')
 const del = document.querySelector('#del')
+const clear = document.querySelector('#clear')
 
 let firstNumber = ''
 let secondNumber = ''
@@ -41,6 +42,7 @@ function delInput(){
 
     valueInput.value = currentValue
 }
+
 
 function handleButtonClick(buttonText) {
     switch (buttonText) {
