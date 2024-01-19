@@ -15,7 +15,10 @@ spans.forEach(span => span.addEventListener('click', () => {
 
 }))
 
+clear.addEventListener('click', clearInput)
 del.addEventListener('click', delInput)
+equal.addEventListener('click', calculateResult)
+
 
 
 // Function to handle numeric button clicks
